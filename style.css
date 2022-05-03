@@ -6,7 +6,7 @@
     
 }
 body{
-    
+    background-color: #c3c3c3;
     flex-direction: column;
     min-height: 100%;
 }
@@ -19,7 +19,7 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    position: absolute
+    position: relative
 }
 
 .menu{
@@ -27,14 +27,55 @@ body{
     height: 60px;
     display: flex;
     justify-content: space-between;
-}
-
-.menu a {
     text-decoration: none;
-    color: #c3c3c3;
+    color: white;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+}
+.menu button {
+    text-decoration: none;
+    background-color: #c3c3c3;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    width: 80px;
+    height: 30px;
+    border: 0;
+    cursor: pointer;
+}
+.menu button:hover {
+    color: black;
+}
+.linha{
+   height: 100%;
+   width: 200px;
+   font-size: 30px;
+   background-color: white;
+   position: fixed;
+   top: 0;
+   right: -20rem;
+   position: absolute;
+   top: 20%;
+   display: none;
+}
+.linha button{
+    text-decoration: nome;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    
+    cursor: pointer;
+}
+
+.linha.show-menu{
+    right: 0;
+    display: block;
+    
+}
+.input{
+    left: 90%;
 }
 .banner{
     background-image: url(imagens/image1.png);
@@ -108,20 +149,20 @@ body{
 .gallery__item--6 {
     grid-column-start: 2;
     grid-column-end: 6;
-    grid-row-start: 11;
-    grid-row-end: 16;
+    grid-row-start: 12;
+    grid-row-end: 17;
 }
 .gallery__item--7 {
     grid-column-start: 6;
     grid-column-end: 11;
-    grid-row-start:11;
-    grid-row-end: 16;
+    grid-row-start:12;
+    grid-row-end: 17;
 }
 .gallery__item--8 {
     grid-column-start: 11;
     grid-column-end: 15;
-    grid-row-start: 11;
-    grid-row-end: 16;
+    grid-row-start: 12;
+    grid-row-end: 17;
 }
 .text1{
     grid-column-start: 2;
@@ -153,8 +194,8 @@ body{
 .text4{
     grid-column-start: 2;
     grid-column-end: 6;
-    grid-row-start: 16;
-    grid-row-end: 16;
+    grid-row-start: 17;
+    grid-row-end: 17;
     text-align: center;
     font-size: 47px;
     text-transform: uppercase;
@@ -162,8 +203,8 @@ body{
 .text5{
     grid-column-start: 6;
     grid-column-end: 11;
-    grid-row-start: 16;
-    grid-row-end: 16;
+    grid-row-start: 17;
+    grid-row-end: 17;
     text-align: center;
     font-size: 47px;
     text-transform: uppercase;
@@ -171,8 +212,8 @@ body{
 .text6{
     grid-column-start: 11;
     grid-column-end: 15;
-    grid-row-start: 16;
-    grid-row-end: 16;
+    grid-row-start: 17;
+    grid-row-end: 17;
     text-align: center;
     font-size: 47px;
     text-transform: uppercase;
@@ -200,6 +241,7 @@ body{
     grid-column-end: 7;
     grid-row-start: 2;
     grid-row-end: 2;
+    cursor: pointer;
  }
  .tele_img{
     grid-column-start: 6;
